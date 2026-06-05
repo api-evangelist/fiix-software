@@ -1,0 +1,127 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "fiix": "https://fiixsoftware.com/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "FiixSoftware": {
+      "@id": "schema:Organization",
+      "@context": {
+        "name": "schema:name",
+        "url": {"@id": "schema:url", "@type": "@id"},
+        "description": "schema:description",
+        "industry": "schema:industry",
+        "parentOrganization": {"@id": "schema:parentOrganization", "@type": "@id"},
+        "makesOffer": {"@id": "schema:makesOffer", "@type": "@id"}
+      }
+    },
+
+    "CMMSApi": {
+      "@id": "schema:WebAPI",
+      "@context": {
+        "name": "schema:name",
+        "description": "schema:description",
+        "documentation": {"@id": "schema:documentation", "@type": "@id"},
+        "termsOfService": {"@id": "schema:termsOfService", "@type": "@id"},
+        "version": "schema:version"
+      }
+    },
+
+    "Asset": {
+      "@id": "fiix:Asset",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name",
+        "description": "schema:description",
+        "category": {"@id": "fiix:assetCategory", "@type": "@id"},
+        "location": {"@id": "schema:location", "@type": "@id"},
+        "serialNumber": "schema:serialNumber",
+        "manufacturer": {"@id": "schema:manufacturer", "@type": "@id"},
+        "modelNumber": "schema:model",
+        "purchaseDate": {"@id": "schema:purchaseDate", "@type": "xsd:date"},
+        "installDate": {"@id": "fiix:installDate", "@type": "xsd:date"}
+      }
+    },
+
+    "WorkOrder": {
+      "@id": "fiix:WorkOrder",
+      "@context": {
+        "id": "@id",
+        "code": "schema:identifier",
+        "description": "schema:description",
+        "status": {"@id": "fiix:workOrderStatus", "@type": "@id"},
+        "asset": {"@id": "fiix:asset", "@type": "@id"},
+        "assignedUser": {"@id": "schema:assignee", "@type": "@id"},
+        "priority": "fiix:priority",
+        "scheduledStartDate": {"@id": "fiix:scheduledStartDate", "@type": "xsd:dateTime"},
+        "completedDate": {"@id": "fiix:completedDate", "@type": "xsd:dateTime"},
+        "estimatedDuration": {"@id": "fiix:estimatedDuration", "@type": "xsd:duration"},
+        "tasks": {"@id": "fiix:workOrderTask", "@container": "@set"}
+      }
+    },
+
+    "WorkOrderTask": {
+      "@id": "fiix:WorkOrderTask",
+      "@context": {
+        "id": "@id",
+        "description": "schema:description",
+        "workOrder": {"@id": "fiix:workOrder", "@type": "@id"},
+        "estimatedDuration": {"@id": "fiix:estimatedDuration", "@type": "xsd:duration"},
+        "completedBy": {"@id": "schema:performer", "@type": "@id"}
+      }
+    },
+
+    "PurchaseOrder": {
+      "@id": "fiix:PurchaseOrder",
+      "@context": {
+        "id": "@id",
+        "code": "schema:identifier",
+        "vendor": {"@id": "schema:seller", "@type": "@id"},
+        "status": "fiix:purchaseOrderStatus",
+        "totalCost": {"@id": "schema:price", "@type": "xsd:decimal"},
+        "currency": "schema:priceCurrency",
+        "requestedBy": {"@id": "schema:agent", "@type": "@id"},
+        "dateCreated": {"@id": "schema:dateCreated", "@type": "xsd:dateTime"}
+      }
+    },
+
+    "Part": {
+      "@id": "fiix:Part",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name",
+        "partNumber": "schema:sku",
+        "description": "schema:description",
+        "unitCost": {"@id": "schema:price", "@type": "xsd:decimal"},
+        "quantityOnHand": {"@id": "fiix:quantityOnHand", "@type": "xsd:integer"},
+        "reorderPoint": {"@id": "fiix:reorderPoint", "@type": "xsd:integer"},
+        "storeroom": {"@id": "fiix:storeroom", "@type": "@id"}
+      }
+    },
+
+    "MaintenanceSchedule": {
+      "@id": "fiix:MaintenanceSchedule",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name",
+        "asset": {"@id": "fiix:asset", "@type": "@id"},
+        "frequency": "schema:repeatFrequency",
+        "nextDueDate": {"@id": "fiix:nextDueDate", "@type": "xsd:dateTime"},
+        "maintenanceType": "fiix:maintenanceType"
+      }
+    },
+
+    "User": {
+      "@id": "schema:Person",
+      "@context": {
+        "id": "@id",
+        "firstName": "schema:givenName",
+        "lastName": "schema:familyName",
+        "email": "schema:email",
+        "role": "schema:jobTitle",
+        "site": {"@id": "fiix:site", "@type": "@id"}
+      }
+    }
+  }
+}

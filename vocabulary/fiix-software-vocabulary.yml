@@ -1,0 +1,144 @@
+vocabulary:
+  name: Fiix Software CMMS Vocabulary
+  description: >-
+    Key industrial and maintenance management concepts used by the Fiix CMMS platform
+    (by Rockwell Automation) covering assets, work orders, parts, and maintenance operations
+    in manufacturing, facilities, and utilities environments.
+  version: "1.0.0"
+  terms:
+    - term: CMMS
+      definition: >-
+        Computerized Maintenance Management System — software that centralizes maintenance
+        information and facilitates the processes of maintenance operations. Fiix is a
+        cloud-based CMMS providing asset tracking, work order management, and preventive
+        maintenance scheduling.
+      tags:
+        - maintenance
+        - software
+        - manufacturing
+
+    - term: Asset
+      definition: >-
+        Any physical equipment, machinery, infrastructure component, or facility item
+        tracked within the CMMS. Assets can be hierarchical (parent/child) and include
+        metadata such as serial number, manufacturer, model, installation date, and
+        maintenance history.
+      tags:
+        - asset-management
+        - equipment
+        - manufacturing
+
+    - term: Work Order
+      definition: >-
+        A documented request to perform maintenance, repair, or inspection on one or more
+        assets. Work orders include details such as priority, assigned technician, scheduled
+        dates, required parts, labor tasks, and completion status. Can be reactive (corrective)
+        or planned (preventive).
+      tags:
+        - maintenance
+        - operations
+        - work-management
+
+    - term: Preventive Maintenance
+      definition: >-
+        Scheduled, proactive maintenance performed at regular intervals (time-based or
+        meter-based) to prevent equipment failure. Fiix supports automated generation of
+        preventive maintenance work orders based on configurable schedules.
+      tags:
+        - maintenance
+        - reliability
+        - scheduling
+
+    - term: Corrective Maintenance
+      definition: >-
+        Unplanned maintenance performed after equipment failure or malfunction is detected.
+        Also called reactive maintenance. Captured in Fiix as reactive work orders triggered
+        by breakdown events or user-submitted requests.
+      tags:
+        - maintenance
+        - reliability
+        - operations
+
+    - term: Purchase Order
+      definition: >-
+        A formal procurement document issued to a vendor to acquire parts, materials, or
+        services needed for maintenance operations. Purchase orders in Fiix are linked to
+        storeroom inventory and can be associated with specific work orders.
+      tags:
+        - procurement
+        - inventory
+        - supply-chain
+
+    - term: Part
+      definition: >-
+        A spare part or consumable material stored in a storeroom and used in maintenance
+        activities. Parts have attributes such as part number, unit cost, quantity on hand,
+        reorder point, and preferred vendor. Can be attached to work orders to track usage.
+      tags:
+        - inventory
+        - spare-parts
+        - storeroom
+
+    - term: Storeroom
+      definition: >-
+        A physical or logical location within the facility where spare parts and materials
+        are stored. Fiix tracks inventory by storeroom, enabling multi-site parts management
+        and reorder management.
+      tags:
+        - inventory
+        - facilities
+        - logistics
+
+    - term: Work Order Task
+      definition: >-
+        An individual step or procedure within a work order that a technician must complete.
+        Tasks can have their own estimated duration, required parts, and completion tracking.
+        Collections of standard tasks can be stored as maintenance task templates.
+      tags:
+        - maintenance
+        - work-management
+        - procedures
+
+    - term: Asset Category
+      definition: >-
+        A hierarchical classification label applied to assets to group similar equipment types
+        (e.g., Pumps, HVAC, Electrical). Categories facilitate reporting, filtering, and
+        assignment of maintenance procedures across asset groups.
+      tags:
+        - asset-management
+        - classification
+        - taxonomy
+
+    - term: FactoryTalk Optix
+      definition: >-
+        Rockwell Automation's industrial HMI and SCADA platform. Fiix provides a native
+        integration library (Fiix CMMS library) for FactoryTalk Optix, enabling operators
+        to create and view work orders directly from the industrial automation interface.
+      tags:
+        - integration
+        - industrial-automation
+        - rockwell-automation
+        - scada
+
+    - term: MA Connect API
+      definition: >-
+        The Fiix CMMS REST-style API (also known as the Maintenance Assistant Connect API)
+        providing programmatic access to all core CMMS objects via CRUD and RPC operations.
+        Authenticated using a three-part key (application key, access key, secret key).
+        Available on Enterprise plans with a rate limit of 1,000 calls per day per user license.
+      tags:
+        - api
+        - integration
+        - enterprise
+
+    - term: Reliability
+      definition: >-
+        The probability that an asset will perform its required function under stated conditions
+        for a specified period. Fiix supports reliability-centered maintenance (RCM) practices
+        through failure tracking, mean time between failures (MTBF) reporting, and maintenance
+        history analytics.
+      tags:
+        - reliability
+        - maintenance
+        - manufacturing
+        - analytics
