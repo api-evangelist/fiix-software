@@ -1,0 +1,70 @@
+aid: fiix-software
+name: Fiix Software
+description: >-
+  Fiix (by Rockwell Automation) is a cloud-based CMMS (Computerized Maintenance
+  Management System) platform for maintenance and reliability teams in manufacturing,
+  facilities, and utilities. The Fiix API provides programmatic access to assets, work
+  orders, purchase orders, parts, users, and maintenance data through custom client
+  libraries, with integration support for ERP and industrial automation systems including
+  FactoryTalk Optix.
+type: Index
+url: https://raw.githubusercontent.com/api-evangelist/fiix-software/refs/heads/main/apis.yml
+tags:
+  - CMMS
+  - Maintenance Management
+  - Asset Management
+  - Manufacturing
+  - Reliability
+  - Work Orders
+created: '2026-06-05'
+modified: '2026-06-05'
+specificationVersion: '0.19'
+apis:
+  - aid: fiix-software:fiix-cmms-api
+    name: Fiix CMMS API
+    description: >-
+      The Fiix CMMS API provides programmatic access to maintenance management data
+      including assets, work orders, purchase orders, parts inventory, users, and
+      maintenance schedules. Supports CRUD operations on all core objects via custom
+      client libraries for Java and other languages. Available on Enterprise plans
+      with a rate limit of 1,000 API calls per day per user license. Integrates with
+      Rockwell Automation FactoryTalk Optix via the Fiix CMMS library.
+    humanURL: https://fiixlabs.github.io/api-documentation/
+    baseURL: https://api.fiixsoftware.com
+    tags:
+      - CMMS
+      - Maintenance Management
+      - Work Orders
+      - Asset Management
+      - Reliability
+    properties:
+      - url: https://fiixlabs.github.io/api-documentation/
+        type: Documentation
+      - url: https://fiixlabs.github.io/api-documentation/guide.html
+        type: GettingStarted
+      - url: https://github.com/fiixlabs/fiix-cmms-api-java-examples
+        type: SourceCode
+common:
+  - type: Website
+    url: https://fiixsoftware.com
+  - type: Documentation
+    url: https://fiixlabs.github.io/api-documentation/
+  - type: Blog
+    url: https://fiixsoftware.com/blog/
+  - type: GitHubOrganization
+    url: https://github.com/fiixlabs
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/fiix-software
+  - type: YouTube
+    url: https://www.youtube.com/@FiixSoftware
+  - type: Pricing
+    url: https://fiixsoftware.com/pricing/
+  - type: About
+    url: https://fiixsoftware.com/about/
+  - type: Integrations
+    url: https://fiixsoftware.com/cmms/integrations/
+  - type: Support
+    url: https://helpdesk.fiixsoftware.com/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
