@@ -2,13 +2,20 @@
   "repo": "fiix-software",
   "feeds": [
     {
-      "source": "https://fiixsoftware.com",
+      "source": "https://fiixsoftware.com/blog/",
       "feed_url": "https://fiixsoftware.com/blog/",
-      "title": "Fiix Software Blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://fiixlabs.github.io/api-documentation/",
+      "feed_url": "https://fiixlabs.github.io/api-documentation/",
+      "title": "",
       "saved": 0,
       "method": "none"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-05T00:00:00Z"
+  "fetched": "2026-06-14T20:42:17Z"
 }
