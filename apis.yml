@@ -45,6 +45,10 @@ apis:
       - url: https://github.com/fiixlabs/fiix-cmms-api-java-examples
         type: SourceCode
 common:
+  - type: TrustCenter
+    url: security/fiix-software-trust-center.yml
+  - type: DomainSecurity
+    url: security/fiix-software-domain-security.yml
   - type: Website
     url: https://fiixsoftware.com
   - type: Documentation
