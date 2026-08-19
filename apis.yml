@@ -30,7 +30,7 @@ tags:
   - Work Orders
 created: '2026-06-05'
 modified: '2026-06-05'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: fiix-software:fiix-cmms-api
     name: Fiix CMMS API
