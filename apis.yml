@@ -1,14 +1,18 @@
 aid: fiix-software
 deliveryModel:
   model: saas
-  open_source: false
+  license_evidence:
+    not_product:
+    - fiixlabs/fiix-cmms-api-java-examples
+  open_source: unknown
   commercial: true
   callable_host: false
   label: Hosted service · you call their endpoint
-  confidence: medium
+  confidence: low
   source:
   - pricing
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
