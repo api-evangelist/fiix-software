@@ -1,4 +1,5 @@
 aid: fiix-software
+
 deliveryModel:
   model: saas
   license_evidence:
@@ -14,6 +15,7 @@ deliveryModel:
   - repository-not-product
   generated: '2026-09-25'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -25,8 +27,11 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fiix-software.png
+
 name: Fiix Software
+
 description: >-
   Fiix (by Rockwell Automation) is a cloud-based CMMS (Computerized Maintenance
   Management System) platform for maintenance and reliability teams in manufacturing,
@@ -34,8 +39,11 @@ description: >-
   orders, purchase orders, parts, users, and maintenance data through custom client
   libraries, with integration support for ERP and industrial automation systems including
   FactoryTalk Optix.
+
 type: Index
+
 url: https://raw.githubusercontent.com/api-evangelist/fiix-software/refs/heads/main/apis.yml
+
 tags:
   - CMMS
   - Maintenance Management
@@ -43,35 +51,63 @@ tags:
   - Manufacturing
   - Reliability
   - Work Orders
+  - SaaS
+
 created: '2026-06-05'
-modified: '2026-06-05'
+
+modified: '2026-10-20'
+
 specificationVersion: '0.23'
-apis:
-  - aid: fiix-software:fiix-cmms-api
-    name: Fiix CMMS API
-    description: >-
-      The Fiix CMMS API provides programmatic access to maintenance management data
-      including assets, work orders, purchase orders, parts inventory, users, and
-      maintenance schedules. Supports CRUD operations on all core objects via custom
-      client libraries for Java and other languages. Available on Enterprise plans
-      with a rate limit of 1,000 API calls per day per user license. Integrates with
-      Rockwell Automation FactoryTalk Optix via the Fiix CMMS library.
-    humanURL: https://fiixlabs.github.io/api-documentation/
-    baseURL: https://api.fiixsoftware.com
-    tags:
-      - CMMS
-      - Maintenance Management
-      - Work Orders
-      - Asset Management
-      - Reliability
-    properties:
-      - url: https://fiixlabs.github.io/api-documentation/
-        type: Documentation
-      - url: https://fiixlabs.github.io/api-documentation/guide.html
-        type: GettingStarted
-      - url: https://github.com/fiixlabs/fiix-cmms-api-java-examples
-        type: SourceCode
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+
 common:
+  - type: Documentation
+    url: https://fiixlabs.github.io/api-documentation/
+  - type: GitHubOrganization
+    url: https://github.com/fiixlabs
+  - type: Blog
+    url: https://fiixsoftware.com/blog/
+  - type: Login
+    url: https://fiixsoftware.com/cmms-login/
+  - type: Pricing
+    url: https://fiixsoftware.com/cmms/pricing/
+  - type: PrivacyPolicy
+    url: https://fiixsoftware.com/legal/privacy/
+  - type: Support
+    url: https://helpdesk.fiixsoftware.com/hc/en-us
+  - type: TermsOfService
+    url: https://community.fiixsoftware.com/site/terms
+  - type: JSONLD
+    url: json-ld/fiix-software-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/fiix-software-vocabulary.yml
+  - type: Sandbox
+    url: sandbox/fiix-software-sandbox.yml
+  - type: Compliance
+    url: https://fiixsoftware.com/security/
+  - type: Authentication
+    url: authentication/fiix-software-authentication.yml
+  - type: LLMsTxt
+    url: llms/fiix-software-llms.txt
+  - type: SecurityTxt
+    url: well-known/fiix-software-status-security.txt
+  - type: WellKnown
+    url: well-known/fiix-software-well-known.yml
+  - type: Hosts
+    url: hosts/fiix-software-hosts.yml
+  - type: Vendors
+    url: vendors/fiix-software-vendors.yml
+  - type: SDKs
+    url: packages/fiix-software-packages.yml
+  - type: Packages
+    url: packages/fiix-software-packages.yml
+  - type: StatusPage
+    url: https://status.fiixsoftware.com/
+  - type: Newsroom
+    url: https://fiixsoftware.com/about-us/news/
   - type: TrustCenter
     url: security/fiix-software-trust-center.yml
   - type: DomainSecurity
@@ -86,16 +122,50 @@ common:
     url: https://github.com/fiixlabs
   - type: LinkedIn
     url: https://www.linkedin.com/company/fiix-software
-  - type: YouTube
-    url: https://www.youtube.com/@FiixSoftware
   - type: Pricing
     url: https://fiixsoftware.com/pricing/
-  - type: About
-    url: https://fiixsoftware.com/about/
   - type: Integrations
     url: https://fiixsoftware.com/cmms/integrations/
   - type: Support
     url: https://helpdesk.fiixsoftware.com/
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+
+apis:
+  - aid: fiix-software:fiix-cmms-api
+    name: Fiix CMMS API
+    description: >-
+      The Fiix CMMS API provides programmatic access to maintenance management data
+      including assets, work orders, purchase orders, parts inventory, users, and
+      maintenance schedules. Supports CRUD operations on all core objects via custom
+      client libraries for Java and other languages. Available on Enterprise plans
+      with a rate limit of 1,000 API calls per day per user license. Integrates with
+      Rockwell Automation FactoryTalk Optix via the Fiix CMMS library.
+    humanURL: https://fiixlabs.github.io/api-documentation/
+    baseURL: https://{subdomain}.macmms.com/api
+    tags:
+      - CMMS
+      - Maintenance Management
+      - Work Orders
+      - Asset Management
+      - Reliability
+    properties:
+      - url: https://fiixlabs.github.io/api-documentation/
+        type: Documentation
+      - url: https://fiixlabs.github.io/api-documentation/guide.html
+        type: GettingStarted
+      - url: https://github.com/fiixlabs/fiix-cmms-api-java-examples
+        type: SourceCode
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Fiix documents its CMMS API only as an HTML guide on fiixlabs.github.io for an RPC-style JSON endpoint at https://{subdomain}.macmms.com/api reached through Java/JS client SDKs, with no OpenAPI or other contract published; api.fiixsoftware.com does not resolve.
+  evidence:
+  - url: https://fiixlabs.github.io/api-documentation/guide.html
+    status: 200
+  - url: https://fiixlabs.github.io/api-documentation/openapi.json
+    status: 404
+  checked: '2026-10-20'
+x-enrichment:
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v5

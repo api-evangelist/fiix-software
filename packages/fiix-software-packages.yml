@@ -1,0 +1,21 @@
+name: Fiix Software packages
+generated: '2026-10-20'
+method: searched
+source: https://fiixlabs.github.io/api-documentation/guide.html
+packages:
+- name: fiix-cmms-client
+  registry: npm
+  url: https://www.npmjs.com/package/fiix-cmms-client
+  language: JavaScript
+  official: true
+  version: 2.41.0
+  published: '2023-07-19'
+  note: maintainer npm-admin@fiixsoftware.com; source github.com/fiixlabs/fiix-cmms-client-js
+- name: fiix-cmms-client-java
+  registry: github
+  url: https://github.com/fiixlabs/fiix-cmms-client-java
+  language: Java
+  official: true
+  version: v2.6.3
+  published: '2017-09-05'
+  note: guide says the Java client is a Maven artifact; search.maven.org returned no 'fiix' artifact, so version is the latest GitHub release (repo last pushed 2026-03-02)

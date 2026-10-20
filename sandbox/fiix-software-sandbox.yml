@@ -1,0 +1,6 @@
+name: Fiix Software sandbox
+generated: '2026-10-20'
+method: searched
+source: https://fiixlabs.github.io/api-documentation/guide.html
+description: "Active subscribers on Enterprise plans can request a sandbox environment to experiment with integrating API in a fully-functional CMMS instance. Contact your Fiix representative to have a sandbox created for you."
+docs: https://fiixlabs.github.io/api-documentation/guide.html

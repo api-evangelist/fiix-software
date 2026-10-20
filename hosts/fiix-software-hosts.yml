@@ -1,0 +1,155 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 11
+  own: 7
+  other_domain: 1
+  platform: 3
+  roles:
+  - api
+  - docs
+  - legal
+  - other
+  - source
+  - status
+  - support
+  - website
+hosts:
+- host: api.fiixsoftware.com
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: fiixsoftware.com
+  role: api
+  relation: own
+- host: community.fiixsoftware.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  serves: []
+  registrable_domain: fiixsoftware.com
+  role: legal
+  relation: own
+- host: fiixlabs.github.io
+  found_by:
+  - pointer
+  - apis[]
+  - vendor-detect
+  types:
+  - Documentation
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: fastly
+  registrable_domain: github.io
+  role: docs
+  relation: platform
+- host: fiixsoftware.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Blog
+  - Login
+  - Pricing
+  - PrivacyPolicy
+  - Compliance
+  - Newsroom
+  - Website
+  - Integrations
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: fiixsoftware.com
+  role: website
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: helpdesk.fiixsoftware.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Support
+  serves:
+  - support
+  vendor: zendesk
+  registrable_domain: fiixsoftware.com
+  role: support
+  relation: own
+- host: lp.fiixsoftware.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: fiixsoftware.com
+  role: other
+  relation: own
+- host: resources.fiixsoftware.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: fiixsoftware.com
+  role: other
+  relation: own
+- host: status.fiixsoftware.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: fiixsoftware.com
+  role: status
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: '{subdomain}.macmms.com'
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: macmms.com
+  role: other
+  relation: other-domain

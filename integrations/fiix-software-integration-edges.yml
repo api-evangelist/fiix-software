@@ -1,0 +1,16 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/fiix-software/integrations
+- https://n8n.io/integrations/fiix-software/
+- https://composio.dev/toolkits/fiix-software
+- https://monid.ai/tools/fiix-software
+checked:
+- https://composio.dev/toolkits/fiix-software
+- https://monid.ai/tools/fiix-software
+- https://n8n.io/integrations/fiix-software/
+- https://zapier.com/apps/fiix-software/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

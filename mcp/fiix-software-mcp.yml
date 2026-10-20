@@ -1,0 +1,9 @@
+name: Fiix Software MCP
+generated: '2026-10-20'
+method: none
+source: https://helpdesk.fiixsoftware.com/mcp
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No Fiix MCP server documented; helpdesk.fiixsoftware.com/mcp answers 401 and community.fiixsoftware.com/mcp 403 for every path (control probe identical), proving nothing.

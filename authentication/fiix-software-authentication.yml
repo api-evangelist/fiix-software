@@ -1,0 +1,9 @@
+name: Fiix Software authentication
+generated: '2026-10-20'
+method: searched
+source: https://fiixlabs.github.io/api-documentation/guide.html
+docs: https://fiixlabs.github.io/api-documentation/guide.html
+schemes:
+- type: apiKey
+  name: Fiix API access keys
+  description: An administrator generates an Application Key, Access Key and Secret Key in the CMMS; the secret cannot be retrieved later. Keys are passed to the Fiix CMMS Client (Java/JavaScript) which signs requests to https://{subdomain}.macmms.com/api.
