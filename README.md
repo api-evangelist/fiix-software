@@ -1,4 +1,4 @@
-# Fiix Software (fiix-software)
+# Fiix Software
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,63 +66,104 @@
 
 Fiix (by Rockwell Automation) is a cloud-based CMMS (Computerized Maintenance Management System) platform for maintenance and reliability teams in manufacturing, facilities, and utilities. The Fiix API provides programmatic access to assets, work orders, purchase orders, parts, users, and maintenance data through custom client libraries, with integration support for ERP and industrial automation systems including FactoryTalk Optix.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/fiix-software/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/fiix-software/refs/heads/main/apis.yml)
+**Areas:** CMMS · Maintenance Management · Asset Management · Manufacturing · Reliability · Work Orders · SaaS
 
-## Scope
+## Fiix Software on APIs.io
 
-- **Type:** Index
+Everything profiled for Fiix Software is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/fiix-software/](https://apis.io/providers/fiix-software/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- CMMS
-- Maintenance Management
-- Asset Management
-- Manufacturing
-- Reliability
-- Work Orders
+- [Fiix CMMS API](https://apis.io/apis/fiix-software/fiix-cmms-api/) — The Fiix CMMS API provides programmatic access to maintenance management data including assets, work orders, purchase orders, parts inventory, users, and…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-06-05
-- **Modified:** 2026-06-05
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON-LD (1)
 
-### Fiix CMMS API
+Linked-data contexts for the provider's vocabulary.
 
-The Fiix CMMS API provides programmatic access to maintenance management data including assets, work orders, purchase orders, parts inventory, users, and maintenance schedules. Supports CRUD operations on all core objects via custom client libraries for Java and other languages. Available on Enterprise plans with a rate limit of 1,000 API calls per day per user license. Integrates with Rockwell Automation FactoryTalk Optix via the Fiix CMMS library.
+- [Fiix Software Context](https://apis.io/jsonld/fiix-software/fiix-software-context/)
 
-- **Human URL:** [https://fiixlabs.github.io/api-documentation/](https://fiixlabs.github.io/api-documentation/)
-- **Base URL:** `https://api.fiixsoftware.com`
+#### Vocabulary (1)
 
-#### Tags
+The provider's domain terms, defined.
 
-- CMMS
-- Maintenance Management
-- Work Orders
-- Asset Management
-- Reliability
+- [Fiix Software CMMS Vocabulary](https://apis.io/vocabularies/fiix-software/fiix-software-vocabulary/)
 
-#### Properties
+#### Security (3)
 
-- [Documentation](https://fiixlabs.github.io/api-documentation/)
-- [Getting Started](https://fiixlabs.github.io/api-documentation/guide.html)
-- [Source Code](https://github.com/fiixlabs/fiix-cmms-api-java-examples)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Fiix Software Authentication](https://apis.io/security/fiix-software/fiix-software-authentication/)
+- [Fiix Software Domain Security](https://apis.io/security/fiix-software/fiix-software-domain-security/)
+- [Fiix Software Trust Center](https://apis.io/security/fiix-software/fiix-software-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://fiixsoftware.com)
 - [Documentation](https://fiixlabs.github.io/api-documentation/)
+- [Pricing](https://fiixsoftware.com/cmms/pricing/)
+- [Support](https://helpdesk.fiixsoftware.com/hc/en-us)
 - [Blog](https://fiixsoftware.com/blog/)
-- [GitHub Organization](https://github.com/fiixlabs)
-- [LinkedIn](https://www.linkedin.com/company/fiix-software)
-- [YouTube](https://www.youtube.com/@FiixSoftware)
-- [Pricing](https://fiixsoftware.com/pricing/)
-- [About](https://fiixsoftware.com/about/)
-- [Integrations](https://fiixsoftware.com/cmms/integrations/)
-- [Support](https://helpdesk.fiixsoftware.com/)
+- [Compliance](https://fiixsoftware.com/security/)
+- [Terms of service](https://community.fiixsoftware.com/site/terms)
+- [Privacy policy](https://fiixsoftware.com/legal/privacy/)
+- [GitHub](https://github.com/fiixlabs)
+- [Status](https://status.fiixsoftware.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 37.7** — thin · rubric 0.24.0 · scored 2026-10-20
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.9 |
+| Contract quality | 6.7 |
+| Contract governance | 13.6 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 54.8 |
+| Access clarity | 60.5 |
+
+**Agent readiness 8.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/fiix-software/](https://apis.io/providers/fiix-software/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Fiix Software: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/fiix-software/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
